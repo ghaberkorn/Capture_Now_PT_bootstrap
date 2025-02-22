@@ -3,69 +3,245 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Capture Now PT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="physical training, golden, applewood, colorado, fitness, personal trainer, online personal trainer">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <meta name="keywords" content="physical training, gym, fitness, personal trainer, online personal trainer">
+    <title>Capture Now PT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .btn {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 30px;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .home {
+            background-color: #000;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .home h1 {
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .home span {
+            color: #007bff;
+        }
+
+        .logo img {
+            height: 80px;
+        }
+
+        .service {
+            background-color: #222;
+            padding: 50px 0;
+        }
+
+        .service h2 {
+            color: #007bff;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial {
+            background-color: #000;
+            color: #fff;
+            padding: 50px 0;
+        }
+
+        .testimonial h2 {
+            font-size: 36px;
+            color: #007bff;
+        }
+
+        .portfolio {
+            background-color: #111;
+            color: #fff;
+            padding: 50px 0;
+        }
+
+        .portfolio h2 {
+            color: #007bff;
+            font-size: 36px;
+        }
+
+        .contact {
+            background-color: #222;
+            padding: 50px 0;
+        }
+
+        .contact h2 {
+            color: #007bff;
+            font-size: 36px;
+        }
+
+        .contact form {
+            background-color: #333;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .form-control {
+            background-color: #444;
+            color: #fff;
+            border: none;
+            margin-bottom: 15px;
+        }
+
+        .form-control:focus {
+            background-color: #555;
+            border-color: #007bff;
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
+
     <!-- Start Header -->
-    <header class="bg-light py-3">
-        <div class="container d-flex justify-content-between align-items-center">
+    <header>
+        <div class="container">
             <div class="logo">
-                <a href="#"><img src="images/logo.jpg" alt="Capture Now PT Logo" style="height: 100px;" /></a>
+                <a href="#"><img src="images/logo.jpg" alt="Capture Now PT Logo" /></a>
             </div>
-            <a href="#contact" class="btn btn-primary">Start Now</a>
+            <a href="#contact" class="btn start-now">Start Now</a>
         </div>
     </header>
     <!-- End Header -->
 
     <!-- Start Home -->
-    <section class="home text-center py-5" id="home">
+    <section class="home" id="home">
         <div class="container">
-            <h1 class="display-4 text-dark"><span>Live</span> for today</h1>
-            <h1 class="display-4 text-dark"><span>Train</span> for Tomorrow</h1>
+            <h1><span>Live</span> for Today</h1>
+            <h1><span>Train</span> for Tomorrow</h1>
         </div>
-        <a href="#about" class="go-down text-dark">
+        <a href="#about" class="go-down">
             <i class="fa fa-angle-down" aria-hidden="true"></i>
         </a>
     </section>
     <!-- End Home -->
 
-    <!-- Start Services -->
-    <section class="service py-5" id="service">
+    <!-- Start Service -->
+    <section class="service" id="service">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="box">
-                        <h2>Services</h2>
-                        <p>We offer a variety of training services to meet your fitness needs. Whether you prefer the convenience of online training or the personalized touch of in-person sessions, we have you covered.</p>
-                        <a href="#" class="btn btn-primary">Start Now</a>
+            <div class="content">
+                <div class="text box">
+                    <h2>Services</h2>
+                    <p>We offer a variety of training services to meet your fitness needs. Whether you prefer online training or in-person sessions, we have you covered.</p>
+                    <a href="#contact" class="btn">Start Now</a>
+                </div>
+                <div class="accordian box">
+                    <div class="accordian-container active">
+                        <div class="head">
+                            <h4 class="blue">Online Training</h4>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <div class="body">
+                            <p>Our online training programs give you the flexibility to work out from anywhere. Personalized workout plans, video demonstrations, and ongoing support are provided.</p>
+                        </div>
+                    </div>
+                    <div class="accordian-container">
+                        <div class="head">
+                            <h4>In-Person Training</h4>
+                            <span class="fa fa-angle-up"></span>
+                        </div>
+                        <div class="body">
+                            <p>Experience the intensity of personalized training with our in-person sessions. Hands-on guidance to achieve your fitness goals in a safe, motivating environment.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="accordion" id="accordionServices">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Online Training
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionServices">
-                                <div class="accordion-body">
-                                    Our online training programs are designed to provide you with the flexibility to work out from anywhere. You'll receive personalized workout plans, video demonstrations, and ongoing support from our trainers.
-                                </div>
-                            </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Service -->
+
+    <!-- Start Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="content">
+                <h2>My Portfolio</h2>
+                <div class="portfolio-content">
+                    <div class="portfolio-left">
+                        <img src="images/personaltrainerphoto.png" alt="Trainer's Portfolio Photo" class="portfolio-photo">
+                    </div>
+                    <div class="portfolio-right">
+                        <ul class="portfolio-list">
+                            <li><span class="fa"></span> Certified Online Personal Trainer</li>
+                            <li><span class="fa"></span> NASM certified personal trainer</li>
+                            <li><span class="fa"></span> Over 10 years of experience in fitness</li>
+                            <li><span class="fa"></span> Specializes in weight loss, muscle gain, and fitness improvement</li>
+                        </ul>
+                        <div class="portfolio-text">
+                            <p>My name is Jeff, a NASM certified personal trainer with over 10 years of experience. I specialize in weight training, cardio, and functional movements to help you achieve your fitness goals. I'm passionate about not just how you look, but how you feel and your overall self-confidence.</p>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    In-Person Training
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionServices">
-                                <div class="accordion-body">
-                                    Experience the benefits of one-on-one training with our in-person sessions. Our trainers will work with you to create a customized fitness plan, provide hands-on guidance, and help you
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio -->
+
+    <!-- Start Testimonial -->
+    <section class="testimonial" id="testimonial">
+        <div class="container">
+            <div class="content">
+                <h2>Testimonials</h2>
+                <div class="testimonial-row">
+                    <span class="arrow prev-arrow fa fa-angle-left"></span>
+                    <div class="testimonial-box active">
+                        <p>"The best personalized training I’ve ever received! Jeff tailored everything to meet my needs, pushing me in the right direction and keeping me motivated." - Adam</p>
+                    </div>
+                    <div class="testimonial-box">
+                        <p>"Jeff helped me push past my limits. I’m now more confident in the gym and in life." - Sara</p>
+                    </div>
+                    <div class="testimonial-box">
+                        <p>"Jeff’s workouts are intense but effective. The results are real, and I’ve never felt better." - Jeanne</p>
+                    </div>
+                    <span class="arrow next-arrow fa fa-angle-right"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonial -->
+
+    <!-- Start Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="content">
+                <h2>Start Your Physical Training Journey</h2>
+                <p>Get connected with our expert trainer and begin your fitness transformation today!</p>
+                <div class="form">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScsdo13eQ4X4k_J9_nRRXX8pltipnkTch0UmqYX2O0lsNTb4w/viewform?embedded=true" width="640" height="721" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
